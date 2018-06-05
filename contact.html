@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- describes html doctument style  -->
+<head>
+<!-- meta data -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!-- link to style sheet -->
+<link rel="stylesheet" type="text/css" href="css/page-styles.css">
+<!-- link to responsive style sheet -->
+<link rel="stylesheet" type="text/css" href="css/responsiveStyles.css">
+<!-- link for google fonts -->
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- page title -->
+<title>Rachel's Web Design</title>
+<!-- end of head -->
+</head>
+<!-- start of body -->
+<body class = "iframe contact">
+<?php require 'form-handling.php'
+?>
+  <section class = "contact-form-section" id = "contactFormSection">
+      <div class = "contact-title"><h4>Contact Me Now</h4></div>
+      <span class = "contact-info">
+        Does your website need a refresh?
+        Do you want to stand out from the crowd?
+        Contact us below with your query and we'll be in touch with you as soon as possible.</span>
+        <div class = "contact-form" id = "contactForm">
+      <form method="post" action="form-handling.php" name = "contact">
+        <fieldset>
+        <legend>Contact Form:</legend>
+        <section class = "main-form">
+          <span class = "required-fields">*Required Fields</span>
+        <div class = "row">
+          <div class = "col-25">
+            <label for="fname">Full Name*: </label>
+          </div>
+          <div class = "col-75">
+            <input type = "text" title = "Full Name"
+            placeholder = " Jane Doe" name = "fname" required pattern = ".{6,}"></input><br>
+          </div>
+          <div class = "row">
+            <div class = "col-25">
+        <label for="email">Email*: </label>
+      </div>
+      <div class = "col-75">
+        <input type="text" title = "email" placeholder = " jane.doe@webserver.com" name = "email" pattern= "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required></input><br>
+      </div>
+        <div class = "row">
+          <div class = "col-25">
+            <label for="cemail">Confirm Email*: </label>
+          </div>
+          <div class = "col-75">
+        <input type="text" title = " confirm email" placeholder = " Confirm email" name = "cemail" pattern= "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required></input><br>
+      </div>
+        <div class = "row">
+          <div class = "col-25"><label for="phone">Phone-Number*: </label>
+          </div>
+          <div class = "col-75">
+        <input type="text" title = "phone number" placeholder = " 0152 000 5555" name = "tel" pattern = "^\s*\(?(020[7,8]{1}\)?[ ]?[1-9]{1}[0-9{2}[ ]?[0-9]{4})|(0[1-8]{1}[0-9]{3}\)?[ ]?[1-9]{1}[0-9]{2}[ ]?[0-9]{3})\s*$" required></input>
+      </div>
+    </section>
+      <section class = "summary">
+        <label for = "message-title">Query subject:</label>
+        <input type="text" placeholder = "Design package request" name = "message-title"></input><br>
+        <label for ="message">Brief summary of your query*:</label>
+        <textarea title="query" placeholder = "Are you looking for web design services?" name = "message" required rows="10" cols="30"></textarea></br>
+      </section>
+      <section class = "submission">
+          <button type="submit" title = "Submit" id="submitBtn" class = "contact-submit" alt = "Submit">Submit</button><br>
+        </section>
+        </fieldset>
+        </form>
+      </section>
+        <div class = "RWDlogo">
+          <a href = "/">
+            <img class = "logo-main contact" src="img/tree-logo/horizontal-logo-@4x.png" alt = "Rachel's Web Design">
+          </a>
+        </div>
+        <div class = "modal-contact">
+          <div class = "modal-content">
+            <h4>Thanks for getting in touch!</h4>
+            We'll get back to you as soon as possible.
+          </div>
+        </div>
+        <script type="text/jscript" src="js/iframe_java.js"></script>
+</body>
+</html>

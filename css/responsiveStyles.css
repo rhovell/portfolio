@@ -1,0 +1,279 @@
+/* responsive styles  *//* responsive styles  */
+@media screen and (min-width:450px){
+    .foot {
+      display: grid;
+      flex-wrap: wrap;
+      grid-template-columns: auto;
+      /* width: 333px; */
+      margin: auto;
+    }
+    .foottext {
+      grid-column-start: 1;
+      grid-column-end: 5;
+    }
+    .pro.links {
+      grid-column-start: 1;
+      grid-column-end: 5;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+    .linked.in.logo {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+    .pphLogo.logo {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+    .facebook.logo {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+    .codepen.logo {
+      grid-column-start: 4;
+      grid-column-end: 5;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+    .social.links {
+      grid-column-start: 1;
+      grid-column-end: 5;
+      grid-row-start: 4;
+      grid-row-end: 5;
+    }
+    .fb.logo {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 5;
+      grid-row-end: 6;
+    }
+    .twitter.logo {
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 5;
+      grid-row-end: 6;
+    }
+    .society6.logo {
+      grid-column-start: 4;
+      grid-column-end: 5;
+      grid-row-start: 5;
+      grid-row-end: 6;
+    }
+}
+@media screen and (min-width:550px){
+  .featured.work {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 50% 50%;
+  }
+  .RWDlogo {
+    height: 6em;
+  }
+  .featured hr {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+  }
+  .featured h2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+  }
+  .first.feature {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+  }
+  .second.feature {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+  }
+  .third.feature {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+  }
+  .fourth.feature {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+  }
+  /* .contact input {
+    width: 50%;
+    float: right;
+  }
+  .required-fields {
+    position: relative;
+    left: 30%;
+    top: 10%;
+  }
+  .contact label {
+    padding: 0.5em 1em;
+    display: inline-block;
+  } */
+}
+@media screen and (min-width:650px){
+  .featured.image {
+    height: 7em;
+    width: 11em;
+  }
+  .foot {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: auto;
+    width: 90%;
+  }
+  .foottext {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .pro.links {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .linked.in.logo {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .pphLogo.logo {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .facebook.logo {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .codepen.logo {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .social.links {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .fb.logo {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .twitter.logo {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .society6.logo {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+}
+@media screen and (min-width:900px){
+  .burger-menu {
+    display: none;
+  }
+  .drop-down-menu {
+    display: inline;
+    width: 800px;
+    grid-column-start: 1;
+  }
+  .nav.header-bar {
+    grid-template-columns: 60% 40%;
+    height: auto;
+  }
+  .nav.header-bar h5 {
+    grid-column-start: 2;
+    text-align: right;
+  }
+  .nav-list a {
+
+    border-right: 1px black;
+  }
+  .nav-list ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    position: absolute;
+  }
+  .nav-list li {
+    display:inline-block;
+    float: left;
+    margin-right: 1px;
+  }
+  .show-hide-modal {
+  display: block;
+  }
+  .modal {
+  display: block;
+  }
+  body {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .RWDlogo {
+    height: 7em;
+  }
+  .featured.work {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+  .featured hr {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+  }
+  .featured h2 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+  }
+  .first.feature {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+  }
+  .second.feature {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+  }
+  .third.feature {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+  }
+  .fourth.feature {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+  }
+  .RWDlogo-foot {
+    height: 3em;
+    vertical-align: middle;
+    padding-left: 0.5em;
+  }
+}

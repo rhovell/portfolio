@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- describes html doctument style  -->
+<head>
+<!-- meta data -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!-- link to style sheet -->
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<!-- link to responsive style sheet -->
+<link rel="stylesheet" type="text/css" href="css/responsiveStyles.css">
+<!-- link for google fonts -->
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- page title -->
+<title>Rachel's Web Design</title>
+<!-- end of head -->
+</head>
+<!-- start of body -->
+<body>
+<!-- start of header -->
+<header>
+  <!-- logo -->
+  <a href="/">
+    <img class = "RWDlogo" alt = "Rachel's Web Design" src = "img/tree-logo/horizontal-logo-@4x.png">
+  </a>
+    <!-- heder text -->
+  <div class = "heading title">
+    <!-- <h1>Rachel Hovell</h1> -->
+    <h4>Design Portfolio</h4>
+  </div>
+
+<!-- navigation for mobile -->
+<div class = "nav header-bar" id = "navBar">
+      <h5>Front-End Web Developer & Graphic Designer</h5>
+  <div class = "burger-menu" id ="burgerMenu"><img src = "img/menu.png" class = "burger-menu-image" id = "burgerMenuImage"></img></div>
+  <div class = "drop-down-menu" id = "dropDownMenu">
+  <ul class = "nav-list">
+    <li class = "nav-item link-one"><a href = "about.html" target='iframe_a' class = "drop-down-menu-link" alt = "About">About</a></li>
+    <li class = "nav-item link-two"><a href = "web.html" target='iframe_a' class = "drop-down-menu-link" alt = "Web Design">Web Design</a></li>
+    <li class = "nav-item link-three"><a href = "services.html" target='iframe_a' class = "drop-down-menu-link" alt = "Services">Services</a></li>
+    <li class = "nav-item link-four"><a href = "graphic.html" target='iframe_a' class = "drop-down-menu-link" alt = "Graphic Design">Graphic Design</a></li>
+    <li class = "nav-item link-five"><a href = "contact.html" target='iframe_a' class = "drop-down-menu-link" alt = "Contact">Contact</a></li>
+    <li class = "nav-item link-six separate">
+      <a href = "https://www.avon.uk.com/store/RH-boutique" class = "drop-down-menu-link" alt = "Shop Avon Now" target="_blank">Shop Avon Now</a></li>
+  </ul>
+</div>
+</div>
+</header>
+  <!-- end of header -->
+<!-- start of main area -->
+<main>
+<iframe src="web.html" name="iframe_a" class = "home-page-iframe" id = "iframeMain"></iframe>
+
+    <!-- people per hour modal -->
+    <div class = "modal" id = "pphModal">
+      <div class = "modal-content" id = "hiddenModal">
+        <div class = "modal-title"><h3>Hire Me!</h3>
+        </div>
+        <div class = "profilePic modal-inner"><img src = "https://rachel-hovell-designs.000webhostapp.com/profilepic.jpg" alt = "Rachel Hovell on PeoplePerHour">
+        </div>
+        <span class = "modal-text">Hire me on
+          <a href = "https://www.peopleperhour.com/freelancer/rachel/front-end-web-developer-and-graphic/2153374" target = "_blank" alt = "PeoplePerHour">
+            People Per Hour</a></br>
+          Professional Front-End Web Developer</span>
+        <div class = "modalLogo">
+          <a href = "https://www.peopleperhour.com/freelancer/rachel/front-end-web-developer-and-graphic/2153374" target = "_blank" alt = "PeoplePerHour">
+            <img src = "https://rachel-hovell-designs.000webhostapp.com/pph-logo.png" alt = "People Per Hour" class = "pphLogo modal-inner"></a>
+      </div>
+      </div>
+        <div class = "show-hide-modal" id = "modalButton"><span class = "modal-button-text">></span>
+        </div>
+        <!-- <div class = "pph-alert" id = "modalAlert">
+          <div class = "alert-pph-inner" id = "alertModalInner">
+            <img src = "https://rachel-hovell-designs.000webhostapp.com/pph2.png" alt = "People Per Hour" class = "pphLogo alert">
+          </div>
+        </div> -->
+    </div>
+</main>
+<!-- end of main area -->
+<!-- footer -->
+<footer>
+<hr>
+  <div class = "foot">
+     <p class = "foottext">
+       Website designed and built by
+       <a href="http://rachel-hovell-designs.000webhostapp.com/">
+         Rachel's Web Design
+       </a><br>Web design that raises awareness and money for enviornmental issues and charities.
+     </p>
+      <p class = "pro links">
+        You can visit my professional websites here:
+      </p>
+      <div class = "linked in logo">
+        <a href = "https://www.linkedin.com/in/rachel-hovell/">
+        <img src = "https://rachel-hovell-designs.000webhostapp.com/LinkedIn.png" alt = "LinkedIn" target="_blank">
+        </a>
+      </div>
+      <div class = "codepen logo">
+        <a href = "https://codepen.io/Rhovell/#">
+        <img src = "https://rachel-hovell-designs.000webhostapp.com/codepenLogo.png" alt = "Codepen" target="_blank">
+        </a>
+      </div>
+      <div class = "pphLogo logo">
+        <a href = "https://www.peopleperhour.com/freelancer/rachel/front-end-web-developer-and-graphic/2153374">
+        <img src = "https://rachel-hovell-designs.000webhostapp.com/pph-logo.png" alt = "People Per Hour" target="_blank">
+        </a>
+      </div>
+      <div class = "facebook logo">
+        <a href = "https://www.facebook.com/rachelswebdesign/">
+        <img src = "https://rachel-hovell-designs.000webhostapp.com/FBlogo.png" alt = "Rachel's Web Design on Facebook" target="_blank">
+        </a>
+      </div>
+      <p class = "social links">
+        Or you can follow my personal graphic design business here:
+      </p>
+      <div class = "fb logo">
+        <a href = "https://www.facebook.com/RachelHDesigns/">
+        <img src = "https://rachel-hovell-designs.000webhostapp.com/FBlogo.png" alt = "Rachel Hovell Design's on Facebook" target="_blank">
+        </a>
+      </div>
+      <div class = "twitter logo">
+        <a href = "https://twitter.com/rachelh_designs">
+        <img src = "https://rachel-hovell-designs.000webhostapp.com/twitterLogo.png" alt = "Twitter" target="_blank">
+      </a>
+      </div>
+      <div class = "society6 logo">
+        <a href = "https://society6.com/rachelhovell">
+          <img src = "https://rachel-hovell-designs.000webhostapp.com/society6Logo.png" alt = "Society6" target="_blank">
+        </a>
+      </div>
+  </div>
+</footer>
+<script type="text/jscript" src="js/java.js"></script>
+</body>
+</html>
