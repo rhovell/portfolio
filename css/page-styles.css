@@ -521,6 +521,10 @@ table.graphic-list td {
 .web-sevices {
   margin-bottom: 1em;
 }
+.services .logo-main {
+  height: 80%;
+  width: auto;
+}
 /* scroll button styling */
 .scroll-button {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7f7f7+0,dbdbdb+30,dbdbdb+32,d1d1d1+46,fefefe+53 */
