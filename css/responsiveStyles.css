@@ -74,9 +74,9 @@
     flex-wrap: wrap;
     grid-template-columns: 50% 50%;
   }
-  .RWDlogo {
+  /* .RWDlogo {
     height: 6em;
-  }
+  } */
   .featured hr {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -153,9 +153,9 @@
   }
 
   /* footer */
-  footer {
-    top: 805px;
-  }
+  /* footer {
+    top: 450px;
+  } */
   .foot {
     display: grid;
     flex-wrap: wrap;
@@ -225,14 +225,17 @@
 }
 @media screen and (min-width:900px){
   /* main body */
+  main {
+    top: 188px;
+  }
   body {
     max-width: 100%;
     /* width: 1000px; */
   }
   /* header */
   .RWDlogo {
-    height: 7em;
-    text-align: center;
+    /* height: 7em; */
+    /* text-align: center; */
     margin-left: auto;
     margin-right: auto;
   }
@@ -246,12 +249,14 @@
     grid-column-start: 1;
   }
   .nav.header-bar {
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 75% 25%;
     height: auto;
   }
   .nav.header-bar h5 {
     grid-column-start: 2;
     text-align: right;
+    float: right;
+    align-self: center;
   }
   .nav-list a {
   }
@@ -266,6 +271,7 @@
     display:inline-block;
     float: left;
     margin-right: 1px;
+    padding: 1em;
   }
   li.nav-item.link-six.separate {
     border-right: none;
@@ -321,11 +327,15 @@
   }
   /* footer */
   footer {
-    top: 450px;
+    top: 470px;
   }
   .RWDlogo-foot {
     height: 3em;
     vertical-align: middle;
     padding-left: 0.5em;
+  }
+  /* scroll button */
+  .scroll-button {
+    bottom: 10%;
   }
 }

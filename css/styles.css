@@ -23,6 +23,10 @@ header styling
   padding: 1em;
   padding-bottom: 0;
 }
+.RWDlogo.home {
+  width: 60%;
+  min-width: 170px;
+}
 header {
   display: grid;
   flex-wrap: wrap;
@@ -74,6 +78,7 @@ hr {
   grid-column-end: 2;
   grid-row-start: 1;
   margin: 0.5em 1em 0.5em 1em;
+  max-width: 300px;
 }
 .drop-down-menu.open {
   z-index: 1;
@@ -116,11 +121,11 @@ hr {
 }
 /* iframe styling */
 .home-page-iframe {
-  width: 100%;
+  /* width: 100%;
   max-width: 100%;
-  height: 275px;
-  min-height: 150px;
-  max-height: 300px;
+  height: 275px;*/
+  min-height: 300px;
+  /* max-height: 300px; */
   border: none;
   margin: 0 0.5em 0 0.5em;
 }
@@ -132,7 +137,7 @@ main {
   max-width: 100%;
   width: 100%;
   position: fixed;
-  top: 168px;
+  top: 175px;
   height: auto;
 }
 /* people per hour modal styling */
@@ -258,7 +263,7 @@ footer {
   margin-right: auto;
   position: absolute;
   background-color: #ffffff;
-  top: 445px;
+  top: 475px;
   padding-left: 1%;
   padding-right: 1%;
 }

@@ -118,8 +118,8 @@ text-align: center;
   padding: 0;
   margin: 0;
 }
-.logo-main {
-  width: 80%;
+.logo-main.contact {
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -361,7 +361,7 @@ styling to create hover style
 
 /* about page styling */
 .about-hero {
-  width: 80%;
+  width: 60%;
   margin: 1em auto 1em auto;
 }
 table.invest-projects {
@@ -503,6 +503,9 @@ table.graphic-list td {
   margin-top: 0.5em;
   margin-bottom: 1em;
 }
+.logo-main.services {
+  width: 70%;
+}
 .services-main {
   text-align: left;
   margin-bottom: 1em;
@@ -521,9 +524,12 @@ table.graphic-list td {
 .web-sevices {
   margin-bottom: 1em;
 }
-.services .logo-main {
+/* .services .logo-main {
   height: 80%;
   width: auto;
+} */
+.RWDlogo.services {
+  width: 20%;
 }
 /* scroll button styling */
 .scroll-button {
@@ -536,7 +542,7 @@ table.graphic-list td {
   width: 3.5em;
   height: 3.5em;
   position: fixed;
-  bottom: 5%;
+  bottom: 18%;
   right: 5%;
   border-radius: 180px;
   border: 0;
