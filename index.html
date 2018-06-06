@@ -17,26 +17,70 @@
 <!-- page title -->
 <title>Rachel's Web Design</title>
 <script type="text/javascript">
-document.onload = function getDocHeight(doc) {
-    doc = doc || document;
-    console.log(document)
-    // stackoverflow.com/questions/1145850/
-    var body = doc.body, html = doc.documentElement;
-    var height = Math.max( body.scrollHeight, body.offsetHeight,
-        html.clientHeight, html.scrollHeight, html.offsetHeight );
-    return height;
-}
-function setIframeHeight(id) {
-    var ifrm = document.getElementById(id);
-    var doc = ifrm.contentDocument? ifrm.contentDocument:
-        ifrm.contentWindow.document;
-    ifrm.style.visibility = 'hidden';
-    ifrm.style.height = "10px"; // reset to minimal height ...
-    // IE opt. for bing/msn needs a bit added or scrollbar appears
-    ifrm.style.height = getDocHeight( doc ) + 100 + "px";
-    ifrm.style.visibility = 'visible';
+function loadiFrames() {
+  var iFrmList = document.querySelectorAll('iframe_a');
+  var iFrmArray = Array.prototype.map.call(iFrmList, function(obj) {
+    var ID = obj.id;
+    iFrmHt(ID);
+  });
 }
 
+function iFrmHt(ID) {
+  var iFrm = document.getElementById(ID);
+  var iDoc = iFrm.contentDocument || iFrm.contentWindow.document;
+  var iHt = function(iDoc) {
+    if (!iDoc) {
+      iDoc = document;
+    }
+    var iKid = iDoc.body;
+    var iRoot = iDoc.documentElement;
+    var iHt = Math.max(iKid.scrollHeight, iKid.offsetHeight,
+      iRoot.clientHeight, iRoot.scrollHeight, iRoot.offsetHeight);
+    return iHt;
+  }
+  iFrm.style.height = iHt + 'px';
+  console.log('iFrame: ' + iFrm.id);
+  console.log('height: ' + iHt(iDoc));
+}
+
+window.onload = loadiFrames;
+function loadiFrames() {
+  var iFrmList = document.querySelectorAll('iframe_a');
+  var iFrmArray = Array.prototype.map.call(iFrmList, function(obj) {
+    var ID = obj.id;
+    iFrmHt(ID);
+  });
+}
+
+// Reference the Document of the target iFrame
+
+function iFrmHt(ID) {
+  var iFrm = document.getElementById(ID);
+  var iDoc = iFrm.contentDocument || iFrm.contentWindow.document;
+  var iHt = function(iDoc) {
+    if (!iDoc) {
+      iDoc = document;
+    }
+    var iKid = iDoc.body;
+    var iRoot = iDoc.documentElement;
+
+// Determine iFrame's child page-- height with several different methods to measure.
+
+    var iHt = Math.max(iKid.scrollHeight, iKid.offsetHeight,
+      iRoot.clientHeight, iRoot.scrollHeight, iRoot.offsetHeight);
+    return iHt;
+  }
+
+// Change the height of the iFrame
+
+  iFrm.style.height = iHt + 'px';
+  console.log('iFrame: ' + iFrm.id);
+  console.log('height: ' + iHt(iDoc));
+}
+
+// If you load on window load, there shouldn't be any timeouts from the iFrames.
+
+window.onload = loadiFrames;
  </script>
 <!-- end of head -->
 </head>
@@ -45,7 +89,7 @@ function setIframeHeight(id) {
 <!-- start of header -->
 <header>
   <!-- logo -->
-  <a href="/">
+  <a href = "web.html" target='iframe_a'>
     <img class = "RWDlogo" alt = "Rachel's Web Design" src = "img/tree-logo/horizontal-logo-@1x.png">
   </a>
     <!-- heder text -->
@@ -75,7 +119,7 @@ function setIframeHeight(id) {
 <!-- start of main area -->
 <main>
 
-<iframe src="web.html" onload="setIframeHeight(this.id)" "runat="server" marginwidth="0" style="margin: auto;" name="iframe_a" class = "home-page-iframe" id = "iframeMain" frameborder="0"></iframe>
+<iframe src="web.html" runat="server" marginwidth="0" style="margin: auto;" name="iframe_a" class = "home-page-iframe" id = "iframeMain" frameborder="0"></iframe>
 
     <!-- people per hour modal -->
     <div class = "modal" id = "pphModal">

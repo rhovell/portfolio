@@ -129,10 +129,10 @@
     width: 11em;
   }
   /* iframe */
-  .home-page-iframe {
+  /* .home-page-iframe {
     height: 600px;
     max-height: 1000px;
-  }
+  } */
   /* graphics page */
   .portfolio-image {
     height: 500px;
@@ -269,11 +269,11 @@
     border-right: none;
   }
   /* iframe */
-  .home-page-iframe {
+  /* .home-page-iframe {
     /* height: 1000px; */
-    max-height: 100%;
-    overflow:scroll;
-  }
+    /* max-height: 100%; */
+    /* overflow:scroll; */
+  /* } */
   /* pph modal  */
   .show-hide-modal {
   display: block;
