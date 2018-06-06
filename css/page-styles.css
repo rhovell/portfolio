@@ -119,7 +119,10 @@ text-align: center;
   margin: 0;
 }
 .logo-main.contact {
-  width: 90%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 /* graphics portfolio styling */
 .graphics-services {
@@ -359,11 +362,8 @@ styling to create hover style
 
 /* about page styling */
 .about-hero {
-  width: 100%;
-  margin: 1em 0 1em 0;
-}
-.RWDlogo img {
-  width: 6em;
+  width: 80%;
+  margin: 1em auto 1em auto;
 }
 table.invest-projects {
   width: 100%;
@@ -375,7 +375,6 @@ table.invest-projects {
 table.invest-projects tr:nth-child(odd) {
 }
 table.invest-projects tr {
-  /* height: 3.7em; */
   padding: 0.5em;
   width: 100%;
 }
@@ -455,7 +454,6 @@ td.description {
   height: 3em;
 }
 
-
 /* services page  */
 table.web-list ,
 table.graphic-list  {
@@ -503,8 +501,6 @@ table.graphic-list td {
   margin-top: 0.5em;
 }
 .note {
-  /* font-size: 0.8em; */
-  /* float: left; */
   margin-top: 0.5em;
   margin-bottom: 1em;
 }
@@ -517,9 +513,6 @@ table.graphic-list td {
   text-align: left;
   font-style: italic;
 }
-.RWDlogo {
-  float: left;
-}
 .web-services h3 {
   text-align: center;
 }
@@ -529,8 +522,7 @@ table.graphic-list td {
 .web-sevices {
   margin-bottom: 1em;
 }
-
-
+/* scroll button styling */
 .scroll-button {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7f7f7+0,dbdbdb+30,dbdbdb+32,d1d1d1+46,fefefe+53 */
   background: rgb(247,247,247); /* Old browsers */
@@ -547,13 +539,10 @@ table.graphic-list td {
   border: 0;
   padding: 0;
   box-shadow: 2px 2px 2px 2px rgba(193, 193, 193, 0.5);
-  transition: display 2s;
-  z-index: 100;
-  /* display: none; */
+  z-index: 1;
 }
 .scroll-button:active {
   transform: translateY(-4px);
-
 }
 .scroll {
   width: 3em;

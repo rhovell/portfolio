@@ -232,7 +232,9 @@
   /* header */
   .RWDlogo {
     height: 7em;
-    text-align: left;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
   /* menu change */
   .burger-menu {
@@ -319,7 +321,7 @@
   }
   /* footer */
   footer {
-    top: 770px;
+    top: 450px;
   }
   .RWDlogo-foot {
     height: 3em;
