@@ -46,11 +46,12 @@ function showSlides(n) {
 }
 }
 // services pages
+if(body.classList.contains("services")){
 let designPack = document.querySelector(".web-list");
 designPack.addEventListener("click", scroller);
 let graphicsPack = document.querySelector(".graphic-list");
 graphicsPack.addEventListener("click", scroller);
-
+}
 function scroller(event) {
     let designPack = $(event.target);
     let packName = event.target.classList[1];

@@ -1,5 +1,6 @@
 /* responsive styles  *//* responsive styles  */
 @media screen and (min-width:450px){
+  /* footer */
     .foot {
       display: grid;
       flex-wrap: wrap;
@@ -67,6 +68,7 @@
     }
 }
 @media screen and (min-width:550px){
+  /* web page */
   .featured.work {
     display: grid;
     flex-wrap: wrap;
@@ -105,6 +107,7 @@
     grid-column-end: 3;
     grid-row-start: 3;
   }
+  /* contact page */
   /* .contact input {
     width: 50%;
     float: right;
@@ -120,9 +123,38 @@
   } */
 }
 @media screen and (min-width:650px){
+  /* web page */
   .featured.image {
     height: 7em;
     width: 11em;
+  }
+  /* iframe */
+  .home-page-iframe {
+    height: 600px;
+    max-height: 1000px;
+  }
+  /* graphics page */
+  .portfolio-image {
+    height: 500px;
+    width: 510px;
+    max-height: 500px;
+    max-width: 510px;
+    /* transform: translateZ(100%); */
+  }
+  .prev,
+  .next {
+    height: 30%;
+    max-height: 510px;
+    font-size: 2em;
+    padding-top: 45%;
+  }
+  .next {
+    right: -10px;
+  }
+
+  /* footer */
+  footer {
+    top: 805px;
   }
   .foot {
     display: grid;
@@ -192,12 +224,17 @@
   }
 }
 @media screen and (min-width:900px){
+  /* main body */
   body {
-    margin-left: auto;
-    margin-right: auto;
     max-width: 100%;
-    width: 1024px;
+    /* width: 1000px; */
   }
+  /* header */
+  .RWDlogo {
+    height: 7em;
+    text-align: left;
+  }
+  /* menu change */
   .burger-menu {
     display: none;
   }
@@ -215,8 +252,6 @@
     text-align: right;
   }
   .nav-list a {
-
-    border-right: 1px black;
   }
   .nav-list ul {
     list-style-type:none;
@@ -225,23 +260,28 @@
     position: absolute;
   }
   .nav-list li {
+    border-right: 1px solid black;
     display:inline-block;
     float: left;
     margin-right: 1px;
   }
+  li.nav-item.link-six.separate {
+    border-right: none;
+  }
+  /* iframe */
+  .home-page-iframe {
+    /* height: 1000px; */
+    max-height: 100%;
+    overflow:scroll;
+  }
+  /* pph modal  */
   .show-hide-modal {
   display: block;
   }
   .modal {
   display: block;
   }
-  body {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .RWDlogo {
-    height: 7em;
-  }
+  /* web page */
   .featured.work {
     display: grid;
     flex-wrap: wrap;
@@ -276,6 +316,10 @@
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 2;
+  }
+  /* footer */
+  footer {
+    top: 770px;
   }
   .RWDlogo-foot {
     height: 3em;
