@@ -18,10 +18,10 @@
 <title>Rachel's Web Design</title>
 <!-- end of head -->
 </head>
-<!-- start of body -->
+<main>
+  <!-- start of body -->
 <body class = "iframe contact">
-<?php require 'form-handling.php'
-?>
+
   <section class = "contact-form-section" id = "contactFormSection">
       <div class = "contact-title"><h4>Contact Me Now</h4></div>
       <span class = "contact-info">
@@ -85,6 +85,13 @@
             We'll get back to you as soon as possible.
           </div>
         </div>
+
+        <!-- scroll to top button -->
+       <div class = "scroll-to-top" id = "scrollUp">
+       <button class = "scroll-button" onclick = "topFunction()"><img src = "img/scroll-top.png" alt = "Scroll to top of page" class = "scroll">
+       </image></button>
+       </div>
+     </main>
         <script type="text/jscript" src="js/iframe_java.js"></script>
 </body>
 </html>
