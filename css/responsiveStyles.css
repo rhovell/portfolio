@@ -276,12 +276,6 @@
   li.nav-item.link-six.separate {
     border-right: none;
   }
-  /* iframe */
-  /* .home-page-iframe {
-    /* height: 1000px; */
-    /* max-height: 100%; */
-    /* overflow:scroll; */
-  /* } */
   /* pph modal  */
   .show-hide-modal {
   display: block;
@@ -337,5 +331,10 @@
   /* scroll button */
   .scroll-button {
     bottom: 10%;
+  }
+}
+@media screen and (min-width:1042px){
+  main {
+    top: 190px;
   }
 }

@@ -1,9 +1,12 @@
+body, html {
+  height: 100%;
+}
 /*
 main styling
 */
 body {
   margin: 0;
-  max-width: 100%;
+  max-width: 100vw;
   width: 1024px;
   font-family: 'Roboto Slab', serif;
   font-size: 1em;
@@ -121,11 +124,8 @@ hr {
 }
 /* iframe styling */
 .home-page-iframe {
-  /* width: 100%;*/
-  max-width: 100%;
-  /* height: 275px; */
+  max-width: 100vw;
   min-height: 300px;
-  /* max-height: 300px; */
   border: none;
   margin: 0 0.5em 0 0.5em;
 }
