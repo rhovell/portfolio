@@ -35,13 +35,13 @@ function hideMenu(){
 
 // if screen is more than 900px then stop running hidemenu and display inline
 if(w > 900){
+  // remove hidemenu event listener
+  let menuLink = document.querySelector(".nav-list");
+  menuLink.removeEventListener("click", hideMenu);
   let menu = document.querySelector("#burgerMenu");
   let menuList = document.querySelector("#dropDownMenu");
   menuList.style.display = "inline";
   menu.style.display = "none";
-  // remove hidemenu event listener
-  let menuLink = document.querySelector(".nav-list");
-  menuLink.removeEventListener("click", hideMenu);
 }
 };
 // event listener to manage menu javascript in case of resize

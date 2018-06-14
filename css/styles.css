@@ -127,21 +127,20 @@ hr {
 }
 /* iframe styling */
 .home-page-iframe {
+  width: 100%;
   max-width: 100vw;
   min-height: 300px;
   border: none;
   margin: 0 0.5em 0 0.5em;
-  /* position: fixed; */
-  /* top: 140px; */
-  /* left: 0; */
 }
 .container {
   width: 1px;
   min-width: 100%;
   *width: 100%;
   max-width: 100vw;
-  overflow-y: scroll;
-  /* overflow: scroll; */
+  /* overflow-y: scroll; */
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 /*
 main area styling
