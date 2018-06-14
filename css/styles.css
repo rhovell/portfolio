@@ -133,7 +133,10 @@ hr {
   left: 0;
 }
 .container {
-  max-width: 100vw;
+  width: 1px;
+  min-width: 100%;
+  *width: 100%;
+  overflow: scroll;
 }
 /*
 main area styling
