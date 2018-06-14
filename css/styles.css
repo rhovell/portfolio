@@ -140,7 +140,7 @@ hr {
   min-width: 100%;
   *width: 100%;
   max-width: 100vw;
-  overflow-x: hidden;
+  overflow-x: auto;
   overflow-y: scroll;
   /* overflow: scroll; */
 }
