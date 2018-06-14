@@ -226,7 +226,7 @@
 @media screen and (min-width:900px){
   /* main body */
   main {
-    top: 188px;
+    /* top: 188px; */
   }
   body {
     max-width: 100%;
@@ -321,7 +321,7 @@
   }
   /* footer */
   footer {
-    top: 470px;
+    /* top: 470px; */
   }
   .RWDlogo-foot {
     height: 3em;
