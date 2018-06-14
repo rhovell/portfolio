@@ -1,53 +1,52 @@
 // menu button jscript
-// event listener tp manage menu javascript in case of resize
-window.addEventListener("resize", manageMenus);
-// call to manageMenus on load
 manageMenus();
+// call to manageMenus on load
 function manageMenus(){
   let w = window.innerWidth;
+  // if screen width less than 900, display burger menu, add event listener to show drop down menu
+  if(w < 900){
     let menu = document.querySelector("#burgerMenu");
-    let menuList = document.querySelector("#dropDownMenu");
-    if(w < 900){
+      let menuList = document.querySelector("#dropDownMenu");
       menuList.style.display = "none";
       menu.style.display = "block";
-// console.log("if less than 900 called");
+      menu.addEventListener("click", showMenu);
 
-(function openDropDown(){
-  let menu = document.querySelector("#burgerMenu");
-  let menuList = document.querySelector("#dropDownMenu");
-  let body = document.querySelector("body");
-  menu.addEventListener("click", showMenu);
-  // show menu on icon click
-  function showMenu(){
-    menu.style.display = "block";
-    menuList.classList.add("open");
-    menuList.style.display = "block";
+  // show menu on burger icon click and add event listener to close menu on burger menu image
+function showMenu(){
+  console.log("show menu called");
+  menu.style.display = "block";
+  menuList.classList.add("open");
+  menuList.style.display = "block";
     if(menuList.classList.contains("open")){
       menu.removeEventListener("click", showMenu);
       menu.addEventListener("click", hideMenu);
     }
   }
   // hide menu on icon click
-  function hideMenu(){
-    menuList.style.display = "none";
-    menuList.classList.remove("open");
-    // console.log("hide menu called");
-      menu.addEventListener("click", showMenu);
-  }
+function hideMenu(){
+  menuList.style.display = "none";
+  menuList.classList.remove("open");
+  menu.addEventListener("click", showMenu);
+}
   // hide menu on link select
   let menuLink = document.querySelector(".nav-list");
   menuLink.addEventListener("click", hideMenu);
-})();
 }
+
 // if screen is more than 900px then stop running hidemenu and display inline
 if(w > 900){
   let menu = document.querySelector("#burgerMenu");
-    let menuList = document.querySelector("#dropDownMenu");
-    menuList.style.display = "inline";
-    menu.style.display = "none";
-  // console.log("if more than 900")
+  let menuList = document.querySelector("#dropDownMenu");
+  menuList.style.display = "inline";
+  menu.style.display = "none";
+  // remove hidemenu event listener
+  let menuLink = document.querySelector(".nav-list");
+  menuLink.removeEventListener("click", hideMenu);
 }
 };
+// event listener to manage menu javascript in case of resize
+window.addEventListener("resize", manageMenus);
+
 // modal button script
 const modalButtonId = document.querySelector("#modalButton");
 const modalButtonSelector = $("#modalButton");
