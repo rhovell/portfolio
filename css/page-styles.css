@@ -225,27 +225,6 @@ main h5 {
   margin-top: 0.5em;
   text-align: right;
 }
-.main.image {
-  box-shadow: 4px 4px 4px -6px #ccc;
-  /*box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color];*/
-  -webkit-box-shadow: 4px 4px 4px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-  -moz-box-shadow:    4px 4px 4px #ccc;  /* Firefox 3.5 - 3.6 */
-  box-shadow:         4px 4px 4px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
-  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
-  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
-  zoom: 1;
-  position: relative; /* This protects the inner element from being blurred */
-  background-color: white;
-  width: 40em;
-  max-width: 100%;
-  border: 1px outset #ccc;
-}
-/*
-animate push effect
-*/
-.main.image:active {
-  transform: translateY(-4px);
-}
 .portfolio {
   max-width: 100%;
 }
@@ -265,30 +244,12 @@ featured work section styling
 .feature {
   margin: auto;
 }
-.featured.work {
-  display: grid;
-  flex-wrap: wrap;
-  grid-template-columns: 100%;
-  width: 100%;
-}
-.featured hr {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  margin-top: 1em;
-}
-.featured h2 {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  margin-bottom: 0.2em;
-}
 /*
 featured images styling
 */
 .featured.image {
   width: calc(100% - 2em);
-  max-width: 15em;
+  max-width: 17em;
   border: 1px outset #ccc;
   box-shadow: 2px 2px 2px -6px #ccc;
   /*box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color];*/
@@ -304,29 +265,48 @@ featured images styling
   display: block;
   transition: .5s ease;
   backface-visibility: hidden;
-  height: 7em;
+  height: 10em;
   margin: auto;
+  vertical-align: middle;
 }
 .featured.image:active {
   transform: translateY(4px);
 }
+.area {
+  display: grid;
+  grid-template-columns: auto;
+  flex-wrap: wrap;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin: 15px 10px;
+  /* padding: 5px; */
+}
 /*
 grid positioning
 */
-.first.feature {
+.portfolio-container h2 {
+  position: relative;
+  top: -35px;
+  background-color: #FFFFFF;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+}
+.games h2 {
   grid-column-start: 1;
   grid-column-end: 2;
-  grid-row-start: 2;
+  grid-row-start: 1;
 }
-.second.feature {
+.first.feature {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 3;
 }
-.third.feature {
+.second.feature {
   grid-column-start: 1;
   grid-column-end: 2;
-  grid-row-start: 4;
+  grid-row-start: 2;
+  margin-top: -25px;
 }
 /*
 styling to create hover style
