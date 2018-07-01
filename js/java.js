@@ -46,36 +46,3 @@ if(w > 900){
 };
 // event listener to manage menu javascript in case of resize
 window.addEventListener("resize", manageMenus);
-
-// modal button script
-const modalButtonId = document.querySelector("#modalButton");
-const modalButtonSelector = $("#modalButton");
-modalButtonId.addEventListener("click", openDraw);
-const modalButtonClass = $(".show-hide-modal")
-const pphModal = $(".modal-content");
-const hideModal = document.querySelector("#hiddenModal");
-
-function openDraw(){
-  pphModal.addClass("open");
-  modalButtonSelector.addClass("slide");
-  // modalButtonSelector.id = "modalButton-open"
-  modalButtonId.innerText = "<";
-  // modalButtonSelector.removeClass("slide");
-  console.log("open class added");
-  closeDraw()
-}
-function closeDraw(){
-  modalButtonId.removeEventListener("click", openDraw);
-  modalButtonId.addEventListener("click", closeDrawAni);
-  function closeDrawAni(){
-    if(modalButtonId.innerText === "<"){
-    pphModal.removeClass("open");
-    modalButtonSelector.removeClass("slide");
-    console.log("open class removed");
-      modalButtonId.innerText = ">";
-  }
-  if(modalButtonId.innerText === ">");
-  modalButtonId.addEventListener("click", openDraw);
-  modalButtonId.removeEventListener("click", closeDrawAni);
-}
-}
