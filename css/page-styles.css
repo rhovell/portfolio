@@ -265,7 +265,7 @@ featured images styling
   display: block;
   transition: .5s ease;
   backface-visibility: hidden;
-  height: 10em;
+  /* height: em; */
   margin: auto;
   vertical-align: middle;
 }
