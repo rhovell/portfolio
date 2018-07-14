@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: auto;
   max-width: 90%;
   width: 1024px;
@@ -6,7 +6,7 @@ body {
   font-size: 1em;
   text-align: center;
   height: auto;
-}
+} */
 hr {
   height: 1px;
   width: 100%;
@@ -408,15 +408,6 @@ td.description {
   margin-right: auto;
   margin-bottom: 0;
 }
-.shop-avon {
-  border: 1px solid black;
-  margin: 0 1em 0 0;
-}
-.join-avon {
-  grid-column-start: 2;
-  border: 1px solid black;
-
-}
 .logo {
     vertical-align: middle;
 }
@@ -425,9 +416,6 @@ td.description {
 }
 .google.logo {
   height: 6em;
-}
-.avon.logo {
-  width: 6em;
 }
 .facebook.logo {
   height: 3em;
