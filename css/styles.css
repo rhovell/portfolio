@@ -209,15 +209,7 @@ main {
   from {left: 0px;}
   to {left: 284px;}
 }
-.modal-content .modalLogo img {
-  width: 3em;
-}
-.modal-content .profilePic img {
-  width: 6em;
-}
-.pph-alert img {
-  width: 3em;
-}
+
 /*
 footer styling
 */
@@ -263,13 +255,10 @@ social logos
 .twitter.logo img {
   width: 3em;
 }
-.society6.logo img {
+.zazzle.logo img {
   height: 3em;
 }
 .codepen.logo img {
-  height: 3em;
-}
-.pphLogo.logo img {
   height: 3em;
 }
 .facebook.logo img {
@@ -293,12 +282,6 @@ grid positioning
 .linked.in.logo {
   grid-column-start: 1;
   grid-column-end: 2;
-  grid-row-start: 3;
-  grid-row-end: 4;
-}
-.pphLogo.logo {
-  grid-column-start: 2;
-  grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 4;
 }
@@ -332,7 +315,7 @@ grid positioning
   grid-row-start: 6;
   grid-row-end: 7;
 }
-.society6.logo {
+.zazzle.logo {
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 6;
