@@ -24,12 +24,6 @@
       grid-row-start: 3;
       grid-row-end: 4;
     }
-    .pphLogo.logo {
-      grid-column-start: 2;
-      grid-column-end: 3;
-      grid-row-start: 3;
-      grid-row-end: 4;
-    }
     .facebook.logo {
       grid-column-start: 3;
       grid-column-end: 4;
@@ -60,20 +54,10 @@
       grid-row-start: 5;
       grid-row-end: 6;
     }
-    .society6.logo {
-      grid-column-start: 4;
-      grid-column-end: 5;
-      grid-row-start: 5;
-      grid-row-end: 6;
-    }
 }
 @media screen and (min-width:550px){
   /* web page */
-  .area {
-    /* display: grid;
-    flex-wrap: wrap;
-    grid-template-columns: 50% 50%; */
-  }
+
   /* contact page */
   /* .contact input {
     width: 50%;
@@ -91,9 +75,6 @@
 }
 @media screen and (min-width:650px){
   /* web page */
-  .area {
-    grid-template-columns: 50% 50%;
-  }
   .portfolio-container h2 {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -111,18 +92,12 @@
   .second.feature {
     margin-top: 0;
   }
-  /* iframe */
-  /* .home-page-iframe {
-    height: 600px;
-    max-height: 1000px;
-  } */
   /* graphics page */
   .portfolio-image {
     height: 500px;
     width: 510px;
     max-height: 500px;
     max-width: 510px;
-    /* transform: translateZ(100%); */
   }
   .prev,
   .next {
@@ -136,9 +111,6 @@
   }
 
   /* footer */
-  /* footer {
-    top: 450px;
-  } */
   .foot {
     display: grid;
     flex-wrap: wrap;
@@ -160,12 +132,6 @@
   .linked.in.logo {
     grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-  .pphLogo.logo {
-    grid-column-start: 3;
-    grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
   }
@@ -199,12 +165,6 @@
     grid-row-start: 3;
     grid-row-end: 4;
   }
-  .society6.logo {
-    grid-column-start: 4;
-    grid-column-end: 6;
-    grid-row-start: 3;
-    grid-row-end: 4;
-  }
 }
 @media screen and (min-width:900px){
   /* main body */
@@ -214,9 +174,6 @@
   body {
     max-width: 100%;
     /* width: 1000px; */
-  }
-  .udacity.area {
-    grid-template-columns: 33% 33% 33%;
   }
   .udacity h2 {
     grid-column-start: 1;
@@ -244,8 +201,6 @@
   }
   /* header */
   .RWDlogo {
-    /* height: 7em; */
-    /* text-align: center; */
     margin-left: auto;
     margin-right: auto;
   }
@@ -289,14 +244,6 @@
   /* web page */
 
   /* footer */
-  footer {
-    /* top: 470px; */
-  }
-  .RWDlogo-foot {
-    height: 3em;
-    vertical-align: middle;
-    padding-left: 0.5em;
-  }
   /* scroll button */
   .scroll-button {
     bottom: 10%;
