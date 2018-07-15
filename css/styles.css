@@ -75,15 +75,14 @@ header {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.5);
   z-index: 1;
-  margin-bottom: 5em;
   top: 0;
-}
-.head {
-  text-align: center;
-  padding: 1em;
-  padding-bottom: 0.8em;
-  margin-top: auto;
   margin-bottom: auto;
+  margin-top: auto;
+  text-align: center;
+}
+.head-text {
+  padding: 1em;
+  /* padding-bottom: 0.8em; */
 }
 .header-container h1 {
   grid-column-start: 2;
@@ -139,7 +138,9 @@ hr {
   grid-column-end: 4;
   grid-row-start: 3;
   width: 100%;
+  max-width: 100vh;
   height: 3em;
+  max-height: 3.5em;
   background-color: rgba(15, 152, 0, 1);
   display: grid;
   grid-template-columns: 90% 10%;
@@ -614,10 +615,10 @@ td.description {
   width: max-content;
 }
 .udacity.logo {
-  height: 8em;
+  height: 4em;
 }
 .google.logo {
-  height: 6em;
+  height: 4em;
 }
 
 /*
