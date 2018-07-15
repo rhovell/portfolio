@@ -1,6 +1,8 @@
 body, html {
   height: 100%;
   width: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 *, *:after, *:before {
 	box-sizing: border-box;
@@ -53,11 +55,11 @@ body {
 header styling
 */
 header {
-  display: grid;
+  /* display: grid;
   flex-wrap: wrap;
   grid-template-columns: auto;
   grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row-end: 3; */
 }
 .RWDlogo.home {
   width: 100%;
@@ -66,6 +68,7 @@ header {
   grid-row-start: 1;
   grid-row-end: 2;
   padding: 0;
+  margin: auto;
 }
 .header-container {
   display: grid;
@@ -82,6 +85,7 @@ header {
 }
 .head-text {
   padding: 1em;
+  margin: auto;
   /* padding-bottom: 0.8em; */
 }
 .header-container h1 {
@@ -101,26 +105,6 @@ hr {
   border: 0;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
 }
-.scroll-hint {
-  position: relative;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  margin-left: auto;
-  margin-right: auto;
-  animation-name: toggleHint;
-  animation-delay: 2s;
-  animation-duration: 5s;
-  opacity: 0;
-}
-@-webkit-keyframes toggleHint {
-  0% {opacity: 1;}
-  20% {opacity: 0;}
-  40% {opacity: 1;}
-  60% {opacity: 0;}
-  80% {opacity: 1;}
-  100% {opacity:  0;}
-}
 /* navigation styling */
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
@@ -138,7 +122,7 @@ hr {
   grid-column-end: 4;
   grid-row-start: 3;
   width: 100%;
-  max-width: 100vh;
+  max-width: 100%;
   height: 3em;
   max-height: 3.5em;
   background-color: rgba(15, 152, 0, 1);
@@ -188,12 +172,9 @@ hr {
   padding: 0.5em 1em 0.5em 1em;
   color: #fff;
 }
-.nav-list a:hover {
-  color: #000000;
-  background-color: #44ff2b;
-}
+.nav-list a:hover,
 .nav-list :hover {
-  background-color: #44ff2b;
+  background-color: rgba(11, 115, 0, 1);
 }
 .nav-list a {
   background-color: transparent;
@@ -201,8 +182,8 @@ hr {
   color: #ffffff;
 }
 .nav-list a:active {
-  color: #000;
-  background-color: #44ff2b;
+  background-color: rgba(11, 115, 0, 1);
+  text-decoration: underline;
 }
 .nav-list a:visited {
   color: #000;
@@ -610,14 +591,12 @@ td.description {
     vertical-align: middle;
 }
 .course-links {
+  width: max-content;
   margin-left: auto;
   margin-right: auto;
-  width: max-content;
 }
-.udacity.logo {
-  height: 4em;
-}
-.google.logo {
+.udacity-logo, .google-logo {
+  display: inline;
   height: 4em;
 }
 
@@ -779,7 +758,6 @@ footer {
   margin: 0;
   list-style: none;
   text-align: left;
-  padding-left: 1em;
 }
 .foot li {
   padding: 0 0 5px 1em;
@@ -793,6 +771,9 @@ footer {
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
+}
+.pro-bar h4 {
+  margin-bottom: 6px;
 }
 .soc-bar h4 {
   margin-bottom: 1em;
