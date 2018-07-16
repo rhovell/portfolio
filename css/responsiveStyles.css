@@ -1,16 +1,5 @@
-@media screen and (max-width:649px){
-
-}
 @media screen and (min-width:650px){
-  .homepage {
-    background-image: url("../img/main/trees.JPG");
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    /* background-origin: border-box; */
-    /* max-width: 100vh; */
-  }
+
   .udacity-logo, .google-logo {
     height: 6em;
   }
