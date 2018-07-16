@@ -1,15 +1,16 @@
 @media screen and (max-width:649px){
+
+}
+@media screen and (min-width:650px){
   .homepage {
     background-image: url("../img/main/trees.JPG");
-    background-position: center;
-    background-repeat: repeat;
-    /* background-size: auto; */
+    background-position: top;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
     background-attachment: fixed;
     /* background-origin: border-box; */
     /* max-width: 100vh; */
   }
-}
-@media screen and (min-width:650px){
   .udacity-logo, .google-logo {
     height: 6em;
   }
@@ -107,7 +108,7 @@
     /* top: 188px; */
   }
   body {
-    max-width: 100%;
+    /* max-width: 100%; */
     /* width: 1000px; */
   }
   .web-design-section h3 {
@@ -171,7 +172,7 @@
   }
   .drop-down-menu ul {
     display: inline;
-    width: 800px;
+    /* width: 800px; */
     grid-column-start: 1;
   }
   .nav.header-bar {
@@ -217,7 +218,7 @@
   }
 }
 @media screen and (min-width:1042px){
-  main {
+  /* main {
     top: 190px;
-  }
+  } */
 }
