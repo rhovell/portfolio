@@ -21,11 +21,7 @@ a:active {
 }
 
 .homepage {
-  background-image: url("../img/main/trees.JPG");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+
   /* background-origin: border-box; */
   /* max-width: 100vh; */
 }
@@ -34,10 +30,10 @@ a:active {
 main styling
 */
 .content {
-  top: 100%;
-  position: relative;
 }
 main {
+  position: relative;
+  top: 100%;
   background-color: #FFFFFF;
   padding: 1em;
 }
@@ -47,11 +43,20 @@ body {
   /* width: 100%; */
   font-family: 'Roboto Slab', serif;
   font-size: 1em;
+  background-image: url("../img/main/trees.JPG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   /* text-align: center; */
 }
 /*
 header styling
 */
+.RWDlogo-home {
+
+  max-width: 15vh;
+}
 .RWDlogo.home {
   width: 100%;
   grid-column-start: 1;
@@ -65,7 +70,7 @@ header styling
 .header-container {
   display: grid;
   flex-wrap: wrap;
-  grid-template-columns: 20% 60% 20%;
+  grid-template-columns: auto;
   grid-row-start: 1;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.5);
@@ -135,8 +140,7 @@ hr {
   grid-row-start: 1;
   margin: auto;
   padding: 0;
-  /* margin-top: auto;
-  margin-bottom: auto; */
+  cursor: pointer;
   text-align: center;
 }
 .burger-menu img {
@@ -189,11 +193,11 @@ hr {
 main area styling
 */
 main {
-  /* margin-left: auto;
-  margin-right: auto; */
   max-width: 100vw;
   width: 100%;
   height: auto;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 h3 {
   text-align: center;
@@ -206,13 +210,19 @@ h3 {
 }
 /*
 contact page styling
-Currently unpublished
+Currently unpublished form
 */
-.contact legend {
+.contact-section {
+  padding-top: 1em;
+}
+.contact-info {
+  text-align: center;
+}
+/*.contact legend {
   text-align: center;
 }
 .contact-form {
-  /* display: grid; */
+  /* display: grid;
   grid-template-columns: auto;
   flex-wrap: wrap;
   text-align: left;
@@ -232,13 +242,13 @@ Currently unpublished
   grid-row-start: 1;
   grid-row-end: 2; */
   /* display: inline-block; */
-  /* width: 100%; */
+  /* width: 100%;
 }
 .summary {
   /* grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 2;
-  grid-row-end: 3; */
+  grid-row-end: 3;
 }
 .submission {
 align-content: center;
@@ -253,14 +263,14 @@ text-align: center;
 
 }
 .contact {
-  /* justify-content: space-around; */
+  /* justify-content: space-around;
 }
 .contact-title {
-  /* width: 100%; */
+  width: 100%;
 }
-.col-25 {
+.col-25 {*/
   /* width: 100%; */
-  float: left;
+/*  float: left;
 }
 .col-75 {
   width: 100%;
@@ -271,9 +281,9 @@ text-align: center;
     display: table;
     clear: both;
 }
-.contact input {
+.contact input {*/
   /* float: right; */
-  border-radius: 5px;
+/*  border-radius: 5px;
   border-style: solid;
   border-width: 1px;
   padding: 0.5em;
@@ -283,9 +293,9 @@ text-align: center;
 .contact label {
   padding: 0.5em;
 }
-.contact textarea {
+.contact textarea {*/
   /* float: right; */
-  resize: none;
+/*  resize: none;
   border-radius: 5px;
   border-style: solid;
   border-width: 1px;
@@ -303,9 +313,9 @@ text-align: center;
 .sign-up-submit:active {
   transform: translateY(4px);
 }
-.required-fields {
+.required-fields {*/
   /* float: right; */
-  position: absolute;
+  /*position: absolute;
   left: 60%;
   font-size: 0.8em;
   padding: 0;
@@ -315,7 +325,7 @@ text-align: center;
   width: 60%;
   margin-left: auto;
   margin-right: auto;
-}
+}*/
 /*
 graphics portfolio styling
 */
@@ -354,10 +364,15 @@ graphics portfolio styling
   border: 0;
   box-shadow: 2px 2px 2px 2px rgba(198, 198, 198, 1);
   cursor: pointer;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 150px;
 }
 .shop-now-button:active {
   transform: translateY(4px);
 }
+
 .prev,
 .next {
   border: 0;
@@ -400,7 +415,9 @@ graphics portfolio styling
 .active, .dot:hover {
   background-color: #717171;
 }
-
+.titles {
+  font-weight: bold;
+}
 /*
 web portfolio styling
 */
@@ -455,26 +472,14 @@ featured images styling
 .featured.image:active {
   transform: translateY(4px);
 }
+/* each area of portfolio is held in area div */
 .area {
   display: grid;
   grid-template-columns: auto;
   flex-wrap: wrap;
-  /* border: 2px solid black; */
-  /* border-radius: 20px; */
   margin: 15px 10px;
-  /* padding: 5px; */
 }
-/*
-grid positioning
-*/
-.portfolio-container h2 {
-  position: relative;
-  top: -35px;
-  background-color: #FFFFFF;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0;
-}
+
 /*
 styling to create hover style
 */
@@ -509,9 +514,13 @@ styling to create hover style
 /*
 about page styling
 */
+.about.section {
+  padding-top: 1em;
+}
 .about-hero {
   width: 100%;
-  margin: 1em auto 1em auto;
+  margin-right: auto;
+  margin-left: auto;
   max-width: 650px;
 }
 table.invest-projects {
@@ -593,102 +602,37 @@ td.description {
 /*
 services page
 */
-table.web-list ,
-table.graphic-list  {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 1em;
-  margin-bottom: 1em;
+ul.skill-list  {
+  list-style: none;
+  padding: 5px;
+  margin: 0;
 }
-table.web-list a:link ,
-table.graphic-list a:link {
-  text-decoration: none;
-  color: black;
-  box-sizing: border-box;
+.skill-list li {
+  padding-top: 5px;
 }
-table.web-list  tr:nth-child(even),
-table.graphic-list  tr:nth-child(even) {
-    background-color: #eee;
-}
-table.web-list th,
-table.graphic-list th {
-    background-color: black;
-    color: white;
-    padding: 0.5em;
-    height: 2em
-}
-table.web-list tr,
-table.graphic-list tr {
-  height: 3.7em;
-  padding: 0.5em;
-}
-table.web-list td,
-table.graphic-list td {
-  padding: 0.5em;
-}
-.design-pack {
-  width: 75%;
-  text-align: left;
-  cursor: pointer;
-}
-.price {
-  width: 25%;
-  text-align: right;
+a.school-link {
+  color: #000000;
 }
 .contract {
   margin-top: 0.5em;
 }
-.note {
-  margin-top: 0.5em;
-  margin-bottom: 1em;
-}
-
-.services-main {
-  text-align: left;
-  margin-bottom: 1em;
-}
-.web-notes {
-  margin-bottom: 1em;
-  text-align: left;
-  font-style: italic;
-}
-.web-services h3 {
-  text-align: center;
-}
-.lead-time {
+.RWDlogo.services img {
   float: right;
-}
-.web-sevices {
-  margin-bottom: 1em;
-}
-.RWDlogo img {
-  width: 100%;
-  margin-right: 1em;
-  margin-bottom: 1em;
-  max-width: 150px;
-}
-.RWDlogo.services {
-  float: left;
-  padding: 0;
+  margin: 5px;
+  width: 40%;
+  max-width: 200px;
 }
 /* scroll button styling */
 .scroll-button {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7f7f7+0,dbdbdb+30,dbdbdb+32,d1d1d1+46,fefefe+53 */
-  background: rgb(247,247,247); /* Old browsers */
-  background: -moz-radial-gradient(center, ellipse cover, rgba(247,247,247,1) 0%, rgba(219,219,219,1) 30%, rgba(219,219,219,1) 32%, rgba(209,209,209,1) 46%, rgba(254,254,254,1) 53%); /* FF3.6-15 */
-  background: -webkit-radial-gradient(center, ellipse cover, rgba(247,247,247,1) 0%,rgba(219,219,219,1) 30%,rgba(219,219,219,1) 32%,rgba(209,209,209,1) 46%,rgba(254,254,254,1) 53%); /* Chrome10-25,Safari5.1-6 */
-  background: radial-gradient(ellipse at center, rgba(247,247,247,1) 0%,rgba(219,219,219,1) 30%,rgba(219,219,219,1) 32%,rgba(209,209,209,1) 46%,rgba(254,254,254,1) 53%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#fefefe',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   width: 3.5em;
   height: 3.5em;
   position: fixed;
   bottom: 2%;
   right: 5%;
-  border-radius: 180px;
   border: 0;
   padding: 0;
-  box-shadow: 2px 2px 2px 2px rgba(193, 193, 193, 0.5);
   z-index: 1;
+  background-color: transparent;
   /* display: none; */
 }
 .scroll-button:active {
@@ -700,7 +644,9 @@ table.graphic-list td {
   margin: auto;
   vertical-align: middle;
 }
-
+.scroll-button:hover {
+  transform: translateY(4px);
+}
 /*
 footer styling
 */
@@ -711,7 +657,7 @@ footer {
   margin-right: auto;
   position: relative;
   background-color: rgba(255, 255, 255, 0.8);
-  top: 96%;
+  top: 98%;
   padding-left: 1%;
   padding-right: 1%;
   padding-top: 1em;
@@ -757,15 +703,15 @@ footer {
   grid-template-columns: 50% 50%;
   flex-wrap: wrap;
 }
-.pro-bar h4, .soc-bar h4 {
+.pro-bar h3, .soc-bar h3 {
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
 }
-.pro-bar h4 {
+.pro-bar h3 {
   margin-bottom: 6px;
 }
-.soc-bar h4 {
+.soc-bar h3 {
   margin-bottom: 1em;
 }
 .RWDlogo-foot {

@@ -34,7 +34,7 @@ function hideMenu(){
 }
 
 // if screen is more than 900px then stop running hidemenu and display inline
-if(w > 900){
+if(w > 700){
   // remove hidemenu event listener
   let menuLink = document.querySelector(".nav-list");
   menuLink.removeEventListener("click", hideMenu);
