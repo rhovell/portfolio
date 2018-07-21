@@ -1,7 +1,7 @@
 @media screen and (max-width: 549px){
   body {
   background-image: url("../img/main/flowers@0,5x.jpg");
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: auto;
   background-attachment: fixed;
