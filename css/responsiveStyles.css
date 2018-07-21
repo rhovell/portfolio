@@ -1,3 +1,12 @@
+@media screen and (max-width: 549px){
+  body {
+  background-image: url("../img/main/flowers@0,5x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+}
 @media screen and (min-width: 550px){
   .nav.header-bar {
     grid-template-columns: 85% 15%;
