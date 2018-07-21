@@ -3,7 +3,7 @@
   background-image: url("../img/main/flowers@0,5x.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
   background-attachment: fixed;
 }
 }
